@@ -1,0 +1,28 @@
+{
+   "token": "",
+   "prefix": "e.",
+   "ownerIDS": [
+      "817856100501684274"
+   ],
+   
+   "status": {
+      "text": "e.help | {name} | Bagusjunio.dev | {guildcount} server | {commands} command | {membercount} user",
+      "text2": "e.help | {membercount} user | {guildcount} server | @eclipse",
+      "type": "STREAMING",
+      "url": "https://twitch.tv/bagusjunio"
+   },
+   "clientsettings": {
+      "nodes": [
+         {
+            "host": "localhost",
+            "port": 2333,
+            "password": "youshallnotpass"
+         }
+      ]
+   },
+
+   "spotify": {
+      "clientID": "52ad218fe09e463f8cb9e110902946ef",
+      "clientSecret": "8cba16cad2e243cda21c3fcf4538e5f8"
+   }
+}

@@ -1,0 +1,143 @@
+2022-01-10 12:32:54.011  INFO 18104 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.4
+	Build:          1257
+	Build time:     26.10.2021 14:18:37 UTC
+	Branch          master
+	Commit:         a364833
+	Commit time:    26.10.2021 14:15:20 UTC
+	JVM:            11.0.11
+	Lavaplayer      1.3.96-original
+
+2022-01-10 12:32:54.160  INFO 18104 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-DI6A9I0 with PID 18104 (C:\Users\USER\Desktop\eclipse\Lavalink.jar started by USER in C:\Users\USER\Desktop\eclipse)
+2022-01-10 12:32:54.161  INFO 18104 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2022-01-10 12:32:54.286  WARN 18104 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-01-10 12:32:56.216  WARN 18104 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-01-10 12:32:56.247  INFO 18104 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-01-10 12:32:56.248  INFO 18104 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2018 ms
+2022-01-10 12:32:56.727  WARN 18104 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2022-01-10 12:32:57.227  INFO 18104 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2022-01-10 12:32:57.610  INFO 18104 --- [main] lavalink.server.config.KoeConfiguration  : OS: Windows 10, Arch: amd64
+2022-01-10 12:32:57.611  WARN 18104 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2022-01-10 12:32:57.949  INFO 18104 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-10 12:32:58.471  INFO 18104 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2022-01-10 12:32:58.495  INFO 18104 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2022-01-10 12:32:58.625  INFO 18104 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
+2022-01-10 12:32:58.632  INFO 18104 --- [main] lavalink.server.Launcher                 : Started Launcher in 5.427 seconds (JVM running for 6.064)
+2022-01-10 12:32:58.636  INFO 18104 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
+2022-01-10 12:35:45.257  INFO 18104 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-10 12:35:45.258  INFO 18104 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-10 12:35:45.271  INFO 18104 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2022-01-10 12:35:45.310  INFO 18104 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:49806
+2022-01-10 12:35:45.461  INFO 18104 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from erela.js
+2022-01-10 12:35:46.031  WARN 18104 --- [pool-2-thread-1] o.u.p.windows.PerfCounterWildcardQuery   : Disabling further attempts to query Process.
+2022-01-10 12:35:46.166  WARN 18104 --- [pool-2-thread-1] o.util.platform.windows.WmiQueryHandler  : COM exception: Invalid Query: SELECT NAME,PRIORITY,CREATIONDATE,PROCESSID,PARENTPROCESSID,READTRANSFERCOUNT,WRITETRANSFERCOUNT,PRIVATEPAGECOUNT,PAGEFAULTSPERSEC FROM Win32_Process WHERE NOT Name LIKE"%_Total"
+2022-01-10 12:35:46.242 ERROR 18104 --- [pool-2-thread-1] lavalink.server.io.StatsTask             : Exception while sending stats
+
+java.lang.NullPointerException: null
+	at lavalink.server.io.StatsTask.getProcessRecentCpuUsage(StatsTask.java:147) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.sendStats(StatsTask.java:99) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.run(StatsTask.java:56) ~[classes!/:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-01-10 12:36:43.873  INFO 18104 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:49806 -- CloseStatus[code=1006, reason=]
+2022-01-10 12:36:43.874  INFO 18104 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-01-10 12:38:40.063  INFO 18104 --- [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:63792
+2022-01-10 12:38:40.078  INFO 18104 --- [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from erela.js
+2022-01-10 12:38:40.146  WARN 18104 --- [pool-3-thread-1] o.util.platform.windows.WmiQueryHandler  : COM exception: Invalid Query: SELECT NAME,PRIORITY,CREATIONDATE,PROCESSID,PARENTPROCESSID,READTRANSFERCOUNT,WRITETRANSFERCOUNT,PRIVATEPAGECOUNT,PAGEFAULTSPERSEC FROM Win32_Process WHERE NOT Name LIKE"%_Total"
+2022-01-10 12:38:40.240 ERROR 18104 --- [pool-3-thread-1] lavalink.server.io.StatsTask             : Exception while sending stats
+
+java.lang.NullPointerException: null
+	at lavalink.server.io.StatsTask.getProcessRecentCpuUsage(StatsTask.java:147) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.sendStats(StatsTask.java:99) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.run(StatsTask.java:56) ~[classes!/:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-01-10 12:39:11.445  INFO 18104 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:63792 -- CloseStatus[code=1006, reason=]
+2022-01-10 12:39:11.448  INFO 18104 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-01-10 12:43:03.999  INFO 18104 --- [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:63821
+2022-01-10 12:43:04.011  INFO 18104 --- [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from erela.js
+2022-01-10 12:43:04.092  WARN 18104 --- [pool-4-thread-1] o.util.platform.windows.WmiQueryHandler  : COM exception: Invalid Query: SELECT NAME,PRIORITY,CREATIONDATE,PROCESSID,PARENTPROCESSID,READTRANSFERCOUNT,WRITETRANSFERCOUNT,PRIVATEPAGECOUNT,PAGEFAULTSPERSEC FROM Win32_Process WHERE NOT Name LIKE"%_Total"
+2022-01-10 12:43:04.163 ERROR 18104 --- [pool-4-thread-1] lavalink.server.io.StatsTask             : Exception while sending stats
+
+java.lang.NullPointerException: null
+	at lavalink.server.io.StatsTask.getProcessRecentCpuUsage(StatsTask.java:147) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.sendStats(StatsTask.java:99) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.run(StatsTask.java:56) ~[classes!/:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-01-10 12:43:38.512  INFO 18104 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:63821 -- CloseStatus[code=1006, reason=]
+2022-01-10 12:43:38.519  INFO 18104 --- [XNIO-1 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-01-10 12:59:30.017  INFO 18104 --- [XNIO-1 task-4] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:58038
+2022-01-10 12:59:30.048  INFO 18104 --- [XNIO-1 task-4] lavalink.server.io.SocketServer          : Connection successfully established from erela.js
+2022-01-10 12:59:30.417  WARN 18104 --- [pool-5-thread-1] o.util.platform.windows.WmiQueryHandler  : COM exception: Invalid Query: SELECT NAME,PRIORITY,CREATIONDATE,PROCESSID,PARENTPROCESSID,READTRANSFERCOUNT,WRITETRANSFERCOUNT,PRIVATEPAGECOUNT,PAGEFAULTSPERSEC FROM Win32_Process WHERE NOT Name LIKE"%_Total"
+2022-01-10 12:59:30.460 ERROR 18104 --- [pool-5-thread-1] lavalink.server.io.StatsTask             : Exception while sending stats
+
+java.lang.NullPointerException: null
+	at lavalink.server.io.StatsTask.getProcessRecentCpuUsage(StatsTask.java:147) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.sendStats(StatsTask.java:99) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.run(StatsTask.java:56) ~[classes!/:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-01-10 13:00:30.099  WARN 18104 --- [pool-5-thread-1] o.util.platform.windows.WmiQueryHandler  : COM exception: Invalid Query: SELECT NAME,PRIORITY,CREATIONDATE,PROCESSID,PARENTPROCESSID,READTRANSFERCOUNT,WRITETRANSFERCOUNT,PRIVATEPAGECOUNT,PAGEFAULTSPERSEC FROM Win32_Process WHERE NOT Name LIKE"%_Total"
+2022-01-10 13:00:30.145 ERROR 18104 --- [pool-5-thread-1] lavalink.server.io.StatsTask             : Exception while sending stats
+
+java.lang.NullPointerException: null
+	at lavalink.server.io.StatsTask.getProcessRecentCpuUsage(StatsTask.java:147) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.sendStats(StatsTask.java:99) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.run(StatsTask.java:56) ~[classes!/:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-01-10 13:00:40.016  INFO 18104 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:58038 -- CloseStatus[code=1006, reason=]
+2022-01-10 13:00:40.017  INFO 18104 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-01-10 13:00:57.236  WARN 18104 --- [lava-daemon-pool-manager-3-thread-1] c.s.d.l.tools.GarbageCollectionMonitor   : Suspicious GC results for the last 2 minutes: [Bucket 0 = 0] [Bucket 20 = 0] [Bucket 50 = 0] [Bucket 200 = 1] [Bucket 500 = 0] [Bucket 2000 = 0] 
+2022-01-10 13:01:35.488  INFO 18104 --- [XNIO-1 task-5] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:61979
+2022-01-10 13:01:35.522  INFO 18104 --- [XNIO-1 task-5] lavalink.server.io.SocketServer          : Connection successfully established from erela.js
+2022-01-10 13:01:35.554  WARN 18104 --- [pool-6-thread-1] o.util.platform.windows.WmiQueryHandler  : COM exception: Invalid Query: SELECT NAME,PRIORITY,CREATIONDATE,PROCESSID,PARENTPROCESSID,READTRANSFERCOUNT,WRITETRANSFERCOUNT,PRIVATEPAGECOUNT,PAGEFAULTSPERSEC FROM Win32_Process WHERE NOT Name LIKE"%_Total"
+2022-01-10 13:01:35.582 ERROR 18104 --- [pool-6-thread-1] lavalink.server.io.StatsTask             : Exception while sending stats
+
+java.lang.NullPointerException: null
+	at lavalink.server.io.StatsTask.getProcessRecentCpuUsage(StatsTask.java:147) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.sendStats(StatsTask.java:99) ~[classes!/:na]
+	at lavalink.server.io.StatsTask.run(StatsTask.java:56) ~[classes!/:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-01-10 13:02:06.762  INFO 18104 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:61979 -- CloseStatus[code=1006, reason=]
+2022-01-10 13:02:06.763  INFO 18104 --- [XNIO-1 I/O-7] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
